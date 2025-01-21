@@ -17,8 +17,8 @@ laplacian_merged = cv2.merge((laplacian_b, laplacian_g, laplacian_r))
 enhanced_image = cv2.addWeighted(image, 1, laplacian_merged, 1, 0)
 
 
-cv2.imwrite('output/colored_laplacian_0066.jpg', laplacian_merged)
-cv2.imwrite('output/enhanced_0066.jpg', enhanced_image)
+cv2.imwrite('data/output/colored_laplacian_0066.jpg', laplacian_merged)
+cv2.imwrite('data/output/enhanced_0066.jpg', enhanced_image)
 
 # cv2.imshow('Original', image)
 # cv2.imshow('Laplacian Colored', laplacian_merged)

@@ -19,4 +19,4 @@ laplacian = cv2.convertScaleAbs(laplacian)
 # Combine
 enhanced = cv2.addWeighted(image, 1, cv2.merge([laplacian]*3), 0.7, 0)
 
-cv2.imwrite('output/enhanced_sharp_0066.jpg', enhanced)
+cv2.imwrite('data/output/enhanced_sharp_0066.jpg', enhanced)
