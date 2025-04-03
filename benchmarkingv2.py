@@ -34,14 +34,14 @@ def calculate_fft_sharpness(image_path):
     return np.sum(magnitude)
 
 # Directory containing the images
-directory = 'small-sample/'
+directory = 'images/'
 outfile = 'sharpness_results.txt'
 
 # Open file to save results
 with open(outfile, 'w') as f:
     f.write("Image Name\tLaplacian\tTenengrad\tBrenner\tFFT\n")
     
-    for i in range(301, 335):
+    for i in range(1, 334):
         image_name = f"{i:04d}.jpg"
         image_path = os.path.join(directory, image_name)
         
